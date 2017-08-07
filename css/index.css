@@ -1,0 +1,58 @@
+@charset "utf-8";
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main , header ,footer{
+    width: 100%;
+}
+table {;
+    width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table tr{
+    height: 50px;
+    color: #666666;;
+}
+table thead tr th, table tbody tr:last-child td{
+    background-color: #6ac6ff;
+    color: #ffffff;
+}
+table tr td:nth-child(1),table tr th:nth-child(1){
+    width: 50px;
+}
+table td,table th{
+    border: 1px solid #262626;
+    text-align: center;
+}
+header td{
+    position: relative;
+    overflow: hidden;
+}
+header td input {
+    width: 100%;
+    height:100%;
+    border: 0;
+    outline: none;
+    text-align: center;
+}
+/*去掉number小箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+@media (max-width: 1200px) {
+    table {
+        width: 83.3333%
+    }
+}
+.chart-left,.chart-right{
+    height: 600px;
+    overflow: hidden;
+}
+footer div.row{
+    margin: 0;
+}
